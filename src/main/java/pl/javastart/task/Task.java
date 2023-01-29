@@ -24,36 +24,18 @@ public class Task {
     }
 
     boolean highPriority() {
-        boolean result;
-        if (this.priority <= 0) {
-            result = false;
-        } else {
-            result = true;
-        }
-        return result;
+        return (this.priority > 0);
     }
 
     boolean lowPriority() {
-        boolean result;
-        if (this.priority >= 0) {
-            result = false;
-        } else {
-            result = true;
-        }
-        return result;
+        return (this.priority < 0);
     }
 
     boolean mediumPriority() {
-        boolean result;
-        if (this.priority != 0) {
-            result = false;
-        } else {
-            result = true;
-        }
-        return result;
+        return (this.priority == 0);
     }
 
-    void outPrint() {
+    void printInfo() {
         System.out.println("\nAktualne zadanie");
         System.out.printf("Nazwa zadania: %s\nOsoba odpowiedzialna: %s %s\n", this.title, this.person.getFirstName(), this.person.getLastName());
         System.out.printf("Priorytet zadania: %d\n", this.priority);
