@@ -2,9 +2,9 @@ package pl.javastart.task;
 
 public class Task {
 
-    String title;
-    Person person;
-    int priority;
+    private String title;
+    private Person person;
+    private int priority;
 
     public Task() {
     }

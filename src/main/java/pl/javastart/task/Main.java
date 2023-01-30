@@ -1,7 +1,5 @@
 package pl.javastart.task;
 
-// import jdk.incubator.vector.VectorOperators;
-
 public class Main {
 
     public static void main(String[] args) {
